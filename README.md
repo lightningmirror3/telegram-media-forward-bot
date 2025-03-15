@@ -66,26 +66,39 @@ python3 bot.py
 
 ## 🚀 Deployment (Systemd Service)
 
-To deploy the bot as a systemd service:
+## Setting Up the Telegram Media Forward Bot Service
 
-1. Create a systemd service file (`telegram-media-forward-bot.service`) in `/etc/systemd/system/`:
+ Create and Edit the Service File
 
-    ```plaintext
-    [Unit]
-    Description=Telegram Media Forward Bot Service
-    After=network.target
+1. Open the `.service` file for editing using `nano`:
+   ```bash
+   sudo nano /etc/systemd/system/telegram-media-forward-bot.service
+   ```
 
-    [Service]
-    User=ubuntu # replace with your VPS username if different
-    WorkingDirectory=/path/to/telegram-media-forward-bot # replace with actual path
-    ExecStart=/usr/bin/python3 bot.py
-    Restart=always
+2. Paste the following content into the file:
+   ```text
+   [Unit]
+   Description=Telegram Media Forward Bot Service
+   After=network.target
 
-    [Install]
-    WantedBy=multi-user.target
-    ```
+   [Service]
+   User=ubuntu
+   WorkingDirectory=/home/ubuntu/telegram-media-forward-bot
+   ExecStart=/usr/bin/python3 bot.py
+   Restart=always
 
-2. Enable and start the service:
+   [Install]
+   WantedBy=multi-user.target
+   ```
+
+ Save and Exit
+
+- Press `Ctrl+O` to save the file.
+- Press `Enter` to confirm the filename.
+- Press `Ctrl+X` to exit the editor.
+
+
+3. Enable and start the service:
 
     ```bash
     sudo systemctl daemon-reload
@@ -93,7 +106,7 @@ To deploy the bot as a systemd service:
     sudo systemctl start telegram-media-forward-bot.service
     ```
 
-3. Check logs for troubleshooting:
+4. Check logs for troubleshooting:
 
     ```bash
     journalctl -u telegram-media-forward-bot.service -f
