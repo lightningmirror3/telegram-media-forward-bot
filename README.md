@@ -100,7 +100,7 @@ To deploy the bot as a systemd service:
     ```
 
 ---
-Bot Misbehave Solution:
+## 😓 Bot Misbehave Solution:
 
 Revoke the old token for @your_bot via @BotFather and generate a new one:
 
