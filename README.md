@@ -119,7 +119,7 @@ Revoke the old token for @your_bot via @BotFather and generate a new one:
 
 Open @BotFather on Telegram.
 
-Use /mybots and select @Myour_bot.
+Use /mybots and select @your_bot.
 
 Choose "API Token" → "Revoke Token."
 
