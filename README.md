@@ -154,10 +154,6 @@ This will display all session files. You can then delete any `.session` files re
 
 ---
 
-## 📖 License
-
-📝 MIT License © Your Name or Organization Name.
-
 ---
 
 Bot created by- [@asifalex](https://t.me/asifalex). 🎉
