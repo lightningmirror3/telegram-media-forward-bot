@@ -135,7 +135,6 @@ This will display all session files. You can then delete any `.session` files re
 This format is clean, easy to follow, and provides clear instructions for users.
 
 ---
-Answer from Perplexity: pplx.ai/share
 
 ## 🛠️ Technologies Used
 
@@ -151,5 +150,5 @@ Answer from Perplexity: pplx.ai/share
 
 ---
 
-Bot created by Telegram [@asifalex](https://t.me/asifalex). 🎉
+Bot created by- [@asifalex](https://t.me/asifalex). 🎉
 
