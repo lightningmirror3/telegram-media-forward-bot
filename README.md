@@ -154,7 +154,5 @@ This will display all session files. You can then delete any `.session` files re
 
 ---
 
----
-
 Bot created by- [@asifalex](https://t.me/asifalex). 🎉
 
