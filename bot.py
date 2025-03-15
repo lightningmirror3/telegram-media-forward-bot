@@ -1,10 +1,14 @@
-from dotenv import load_dotenv
-load_dotenv()
 import logging
 import asyncio
 from pyrogram import Client, filters, idle
 from pyrogram.errors import PeerIdInvalid, ChatWriteForbidden, FloodWait
 from config import Config, CHANNEL_MAPPING
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# rest of your bot code...
+
 
 # Logging Setup 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
