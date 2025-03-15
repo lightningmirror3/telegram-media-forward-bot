@@ -114,7 +114,6 @@ Generate a new token and update it in your .env file.
 
 Delete the old session file after updating the token:
 
----
 
 ### Delete Session File
 
@@ -131,8 +130,7 @@ ls *.session
 ```
 
 This will display all session files. You can then delete any `.session` files related to your bot as needed.
-
---- 
+ 
 
 This format is clean, easy to follow, and provides clear instructions for users.
 
