@@ -100,6 +100,44 @@ To deploy the bot as a systemd service:
     ```
 
 ---
+Bot Misbehave Solution:
+
+Revoke the old token for @your_bot via @BotFather and generate a new one:
+
+Open @BotFather on Telegram.
+
+Use /mybots and select @Myour_bot.
+
+Choose "API Token" → "Revoke Token."
+
+Generate a new token and update it in your .env file.
+
+Delete the old session file after updating the token:
+
+---
+
+### Delete Session File
+
+To delete the session file associated with your bot, use the following command:
+
+```bash
+rm MediaForwardBot.session
+```
+
+If you're unsure about the session filename, you can list all `.session` files in your current directory by running:
+
+```bash
+ls *.session
+```
+
+This will display all session files. You can then delete any `.session` files related to your bot as needed.
+
+--- 
+
+This format is clean, easy to follow, and provides clear instructions for users.
+
+---
+Answer from Perplexity: pplx.ai/share
 
 ## 🛠️ Technologies Used
 
