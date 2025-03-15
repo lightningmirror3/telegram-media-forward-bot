@@ -130,9 +130,6 @@ ls *.session
 ```
 
 This will display all session files. You can then delete any `.session` files related to your bot as needed.
- 
-
-This format is clean, easy to follow, and provides clear instructions for users.
 
 ---
 
